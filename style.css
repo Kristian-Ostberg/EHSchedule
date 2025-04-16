@@ -1,0 +1,219 @@
+.amaranthFont { /* Sets the font to GoogleFont's "Amaranth" */
+    font-family:'Amaranth';
+}
+
+.mondaFont { /* Sets the font to GoogleFont's "Monda" */
+    font-family:'Monda';
+}
+
+.prom {
+    background-color: var(--color-footer);
+    padding: 5px 4px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    width: 32.5%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.closeButton {
+    cursor: pointer;
+    background-color: var(--color-bg);
+    font-size: 10px;
+    color: var(--color-fg);
+    border-radius: 100%;
+    padding: 4px 7px 4px 7px;
+}
+
+.closeButton:hover {
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+}
+
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+    --color-footer: #cdcdcd;
+    
+}
+
+[data-theme="dark"] {
+    --color-bg: #212121;
+    --color-fg: #F8EDE3;
+    --color-footer: #323232;
+}
+
+.roundedCorner { /* Creates the rounded border surrounding the title of each page. */
+    border: 2px solid #cdcdcd;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.aboutText { /* Aligns the text in the "About" page. If I was better at CSS and Bootstrap, this would look better on mobile devices. */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.footer { /* Creates the small footer at the bottom of the page. */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    background-color: var(--color-footer);
+}
+
+.themeButton {
+    padding: 0%;
+    margin: 10px 0% 0% 0%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-width: 0px;
+    font-size: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.version {
+    font-size: 18px;
+    
+}
+
+.versionDate {
+    font-size: 15px;
+    color: grey;
+}
+
+.changelog {
+    border: 2px solid #cdcdcd;
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: table;
+    width: 50%;
+}
+
+.changenotes {
+    color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    text-align: left;
+}
+
+.inTenTen {
+    color: #ed3434;
+}
+
+.rainbow{
+	animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+}
+
+.lastDay{
+    margin-bottom: 20px;
+}
+
+tr.active {
+    background-color: var(--color-footer);
+}
+
+body {
+    padding-bottom: 5%;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+
+table { /* Makes tables format how I like them. */
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+th, td { /* Makes tables have bordered dividers. */
+    padding: 8px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+tr:hover { /* Makes the tables hoverable! Try hovering over them with your mouse! */
+    background-color: var(--color-footer);
+}
+
+tr.current { /* Makes the tables highlight the current period */
+    background-color: var(--color-footer);
+}
+
+@keyframes rainbow{
+	100%,0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+}
+
+::-webkit-scrollbar { /* Custom scrollbar!*/
+  width: 10px;
+}
+
+::-webkit-scrollbar-track { /* Custom scrollbar!*/
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb { /* Custom scrollbar!*/
+  background: #888; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover { /* Custom scrollbar!*/
+  background: #555; 
+}

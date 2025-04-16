@@ -1,0 +1,378 @@
+<!doctype html>
+<html id="html" lang="en" data-theme="light">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DB54YTCC22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-DB54YTCC22');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title id="title">EHSchedule</title>
+    <link rel="icon" href="https://codehs.com/uploads/a07d40d8ceaef7f653c90de060928921">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-default navbar-full-width navbar-expand mondaFont">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">EHSchedule</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">A Lunch</a></li>
+          <li><a href="bLunch.html">B Lunch</a></li>
+          <li><a href="southCampus.html">South Campus</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+        </ul>
+        <button type="button" class="navbar-right themeButton" onClick="changeTheme()"><i id="themeIcon" class="material-icons">brightness_4</i></button>
+      </div>
+    </nav>
+    <div class="container-fluid mondaFont">
+      <div class="text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="amaranthFont roundedCorner">About This Website</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 aboutText">
+            <p>
+              Hey! This is Stefan, creator of EHSchedule. This
+              page just explains some information about the creation of this
+              website. Feel free to read about some of the things I found
+              interesting while building this schedule site!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 aboutText">
+            <p>
+              This was created as a project to see how I could combine
+              Javascript and HTML, two coding languages I learned through the
+              Computer Science magnet at Edgewater Highschool. I noticed that
+              the class schedule posted on Edgewater's official website was not
+              accurate to reflect changes made before the 2023-2024 school year
+              started. I then started thinking about what might be useful to see
+              on a small webpage made specifically for Edgewater's schedule. I
+              threw it all together in a few days and now I have a super handy
+              website to use when I want to know how much time is left in class!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 aboutText">
+            <p>
+              The base function of this website may be complete, but I still
+              want to improve it in any way I can. I'm always open to
+              suggestions! <a href="https://docs.google.com/forms/d/e/1FAIpQLSczaNdqPDAi_SP3BIyHHxgvPHZ_n7l2D6nCYI7hRoZmf-yH1g/viewform?usp=sf_linkhttps://docs.google.com/forms/d/e/1FAIpQLSczaNdqPDAi_SP3BIyHHxgvPHZ_n7l2D6nCYI7hRoZmf-yH1g/viewform?usp=sf_link">Click here to make a suggestion!</a> Below is a changelog to show the stages of this
+              website as I develop it.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.9.4</p>
+            <p class="versionDate">(April 15, 2025)</p>
+            <ul class="changenotes">
+              <li>
+                Another suggestion change. On each schedule page, there's now a 
+                countdown to the last day of school! This is counting down to the
+                underclassmen's final day. Sorry seniors. You'll have to count 
+                down to your graduation on your own.
+              </li>
+              <br>
+              <li>
+                Speaking of graduation, it's sneaking up on me <i>very</i> fast!
+                I was planning to try to figure out how to preserve this website 
+                before I graduated, but I might have run out of time. I will try
+                to find a way to keep this website up in some way, but unfortunately
+                I can't make any promises.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.9.3</p>
+            <p class="versionDate">(January 14, 2025)</p>
+            <ul class="changenotes">
+              <li>
+                This was a suggestion change. In case your browser happens to be 
+                in a timezone other than EST, you'll notice that the website now 
+                converts timezones automatically!
+              </li>
+              <br>
+              <li class="rainbow">
+                <a href="https://scheduleasy.org" class="rainbow">Scheduleasy</a> has been declared 
+                the winner of the 2024 Congressional App Challenge for FL-10! Yeah, 
+                I'm that cool.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.9.2</p>
+            <p class="versionDate">(November 8, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                A certain physics teacher in building 14 told me that I made some
+                errors in the South Campus bell schedule. Those are now (hopefully)
+                rectified. 
+              </li>
+              <br>
+              <li>
+                7th period now ends 2 minutes earlier for South Campus.
+              </li>
+              <br>
+              <li>
+                Between class periods, the page should no longer display "NaN" minutes
+                remaining.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.9.1</p>
+            <p class="versionDate">(November 7, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                A certain physics teacher in building 14 suggested that I add a
+                schedule for the South Campus, where classes start two minutes later
+                and end two minutes earlier. 
+              </li>
+              <br>
+              <li>
+                You will now see a tab for the South Campus schedule. Use it if 
+                you're in a class in building 14!
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.9.0</p>
+            <p class="versionDate">(November 4, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                I know that in the previous changelog I said this website will no
+                longer be maintained, but I figured I'd do one last update -- for 
+                old time's sake, y'know? I've gotten a few suggestions to make the
+                website show when we're in 10/10 (I think it's called "No Fly 
+                Zone" or something now) so I decided to finally code that feature!
+              </li>
+              <br>
+              <li>
+                The time remaining until the end of the period will now display
+                in red if we are in the first or last 10 minutes of class.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.8.0</p>
+            <p class="versionDate">(August 12, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                New year, new site! Over the summer I have worked to create a 
+                brand new website with more features and flexibility. As of 
+                August 12, it is blocked by OCPS because it is a newly registered
+                domain. However, once it is unblocked, all creative process and 
+                attention will be shifted to my new site. This page will stay up 
+                for the forseeable future, but it will no longer be updated. 
+                Friendship ended with EHSchedule - Now
+                <a href="https://scheduleasy.org">Scheduleasy</a> is my best 
+                friend.
+              </li>
+              <br>
+              <li>
+                Adjusted the start and end times of most periods to represent the
+                new 2024-2025 school year schedule.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.7.1</p>
+            <p class="versionDate">(March 13, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                Added dates to the changelog. I was able to find backup files of this website's entire history, and they included timestamps! Now each version has the approximate date it was released.
+              </li>
+              <br>
+              <li>
+                Added a suggestion link to About.html. It's highlighted in blue text above these change notes. If you want me to add anything to the website, submit a Google Form via the link! No promises I'll add it, but it's an easy way to let me know what you want on the website.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.7.0</p>
+            <p class="versionDate">(March 6, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                I finally buckled down and added a dark mode! I avoided doing it in the past because I didn't know how to save the user's preference, but I've finally figured out how to save what choice they make!
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.6.0</p>
+            <p class="versionDate">(March 1, 2024)</p>
+            <ul class="changenotes">
+              <li>
+                Up till now, I've been manually changing the month and year at the bottom of the page in the footer every month. While updating the month today, I realized that I've made a website that automatically pulls and displays the time, yet I was still manually changing the date. Needless to say, the footer now automatically updates with the month and year.
+              </li>
+              <br>
+              <li>
+                  Minor code cleanup. (My whitespaces were misaligned.)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.5.0</p>
+            <p class="versionDate">(December 21, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                EHSchedule was submitted to the Congressional App Challenge in October of 2023. During December of 2023, I was informed that it was a runner-up in the State of Florida District 10. Nothing new to this version. (Except that I'm awesome)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.4.1</p>
+            <p class="versionDate">(November 3, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                Added a new message that displays once school is out for the day. 
+              </li>
+              <br>
+              <li>
+                Major code cleanup and beautification. If you know anything about HTML, look at the source code. It's just so tidy!
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.4.0</p>
+            <p class="versionDate">(October 26, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                Switched Javascript functionality from being in the .html files
+                to external .js files. No clue why I didn't do this earlier, but
+                the code is much easier to read now.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.3.2</p>
+            <p class="versionDate">(October 25, 2023)</p>
+            <ul class="changenotes">
+              <li>Added a changelog to the About page.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.3.1</p>
+            <p class="versionDate">(October 21, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                Created test.html to test confetti and other things I may add.
+                Check it out, and you might see a preview of what I'm working
+                on! (Or you might just see regular old A Lunch.)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.3.0</p>
+            <p class="versionDate">(October 20, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                Added an EHS-themed burst of confetti when each class ends.
+              </li>
+              <br>
+              <li>Added a simple custom scrollbar.</li>
+              <br>
+              <li>Fixed a padding issue with the footer.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.2.0</p>
+            <p class="versionDate">(September 28, 2023)</p>
+            <ul class="changenotes">
+              <li>
+                Made the tab's title show how many minutes are left in the
+                period.
+              </li>
+              <br>
+              <li>
+                Fixed issue with A Lunch 3rd period ending 1 minute early.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.1.1</p>
+            <p class="versionDate">(August 28, 2023)</p>
+            <ul class="changenotes">
+              <li>Fixed an issue with the sticky footer not... sticking.</li>
+              <br>
+              <li>Minor code cleanup.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 changelog">
+            <p class="version">Version 1.1.0</p>
+            <p class="versionDate">(August 26, 2023)</p>
+            <ul class="changenotes">
+              <li>Initial release.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 text-left">
+            <span>Created by: Stefan Lotz</span>
+          </div>
+          <div class="col-sm-6 text-right">
+            <span>Accurate as of: <span id="month"></span> <span id="year"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="aLunch.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
