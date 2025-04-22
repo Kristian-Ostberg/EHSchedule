@@ -1,21 +1,39 @@
-var secretCode= ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","Enter"];
-var urStinkyCode=[];
-document.addeventlistener("keydown", (event) =>{
-  urStinkycode.push(event.key);
-  for(var i; i<urStinkycode.length; i++){
-    if(urStinkyCode[i] != secretCode[i]){
-      urStinkyCode=[];
-      break;
-    if(i==secretCode.length-1){
-      funstuff();
+var secretCode = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","Enter"];
+var urStinkyCode = [];
+
+document.addEventListener("keydown", (event) =>{
+  urStinkyCode.push(event.key);
+  
+if(event.key == "Enter") {
+    var j = urStinkyCode.length - 9
+    for(var i = 0; i < urStinkyCode.length; i++) {
+        if(urStinkyCode[j] == secretCode[i]) {
+            j++;
+        }
+        else {
+            break;
+        }
+    }
+    if(j == 9) {
+        funstuff();
     }
   }
-})
-fucntion funstuff(){
+});
+
+function funstuff(){
   confetti({
-        angle: randomInRange(55, 125),
-        spread: randomInRange(50, 70),
-        particleCount: randomInRange(100, 150),
-        origin: { y: 0.6 }
-      });
-}
+        particleCount: 250,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 },
+        colors: [ "#ff0000", "cccccc" ],
+    });
+        
+    confetti({
+        particleCount: 250,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 },
+        colors: [ "#ff0000", "cccccc" ],
+    });
+};
