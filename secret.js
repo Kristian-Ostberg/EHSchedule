@@ -16,6 +16,7 @@ if(event.key == "Enter") {
     }
     if(j == 9) {
         funstuff();
+        urStinkyCode = [];
     }
   }
 });
